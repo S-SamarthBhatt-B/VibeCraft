@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VibeCraft LinkNest</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="imgs/logo.png" />
+  <style>
+    body {
+      background: url('imgs/bg.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #FFFFFF;
+    }
+    /* Card styling */
+    .card {
+      background: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+      background-color: rgba(46, 44, 74, 0.85);
+      border: 2px solid #4FD0E6;
+    }
+    .card:hover {
+      box-shadow: 0 0 20px #4FD0E6;
+      transform: scale(1.02);
+    }
+
+    /* Heading and paragraph colors */
+    h1 {
+      color: #8E44AD; /* Vibrant Purple */
+    }
+    h2 {
+      color: #00FFFF; /* Electric Aqua */
+    }
+    h3 {
+      color: #FFFFFF; /* White */
+    }
+    p {
+      color: #AAAAAA; /* Slate Gray */
+    }
+
+    /* Responsive fixes */
+    @media (max-width: 640px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      nav ul li {
+        margin-bottom: 0;
+      }
+    }
+  </style>
+</head>
+<body class="font-sans backdrop-blur-md">
+  <!-- Navigation Bar -->
+  <nav class="bg-[#1C1B2F]/90 text-white px-6 py-4 shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center">
+      <a href="#" class="flex items-center space-x-3">
+        <img src="imgs/logo.png" alt="VibeCraft Logo" class="h-8 w-8 object-contain" />
+        <h1 class="text-2xl font-bold">VibeCraft LinkNest</h1>
+      </a>
+      <ul class="flex flex-wrap space-x-6 text-[#FFFFFF] text-lg mt-2 sm:mt-0">
+        <li><a href="#study" class="hover:text-[#00FFFF]">Study</a></li>
+        <li><a href="#entertainment" class="hover:text-[#00FFFF]">Entertainment</a></li>
+        <li><a href="#development" class="hover:text-[#00FFFF]">Development</a></li>
+        <li><a href="#learning" class="hover:text-[#00FFFF]">Learning</a></li>
+        <li><a href="#practice" class="hover:text-[#00FFFF]">Practice</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- Main Content -->
+<main class="p-6 max-w-7xl mx-auto space-y-10">
+
+    <!-- Study Section -->
+    <section id="study">
+        <h2 class="text-3xl font-bold text-center mb-2" style="color: #8E44AD;">Study</h2>
+        <p class="text-center mb-6">Boost your productivity with these powerful tools and platforms. From note-taking apps to flashcards and collaborative documents, everything you need to study smarter is right here</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <a href="https://khanacademy.org" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">Khan Academy</h3>
+                    <p class="mb-3">Free world-class education for anyone, anywhere.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit Khan Academy</span>
+                </div>
+            </a>
+
+            <a href="https://youtube.com/c/CrashCourse" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">CrashCourse</h3>
+                    <p class="mb-3">Engaging video lessons on a variety of subjects.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Watch on YouTube</span>
+                </div>
+            </a>
+
+            <a href="https://www.examfear.com" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">ExamFear</h3>
+                    <p class="mb-3">Free CBSE/NCERT-based video tutorials</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit ExamFear</span>
+                </div>
+            </a>
+
+            <a href="https://www.studytonight.com" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">Studytonight</h3>
+                    <p class="mb-3">Programming, DBMS, OS, networking, and more..</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit Studytonight</span>
+                </div>
+            </a>
+
+            <a href="https://school.geeksforgeeks.org" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">GeeksforGeeks School Portal</h3>
+                    <p class="mb-3">Programming basics and mathematics for school-level students.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit GeeksforGeeks School Portal</span>
+                </div>
+            </a>
+
+            <a href="https://www.notion.so" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">Notion</h3>
+        <p class="mb-3">All-in-one workspace for notes, tasks, and project planning.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Use Notion</span>
+    </div>
+</a>
+
+<a href="https://quizlet.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">Quizlet</h3>
+        <p class="mb-3">Create and study flashcards to master any subject.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit Quizlet</span>
+    </div>
+</a>
+
+<a href="https://www.coursera.org" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">Coursera</h3>
+        <p class="mb-3">Online courses from top universities and companies.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Explore Coursera</span>
+    </div>
+</a>
+
+<a href="https://www.mindmup.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">MindMup</h3>
+        <p class="mb-3">Create unlimited mind maps to visualize and organize ideas.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Start Mind Mapping</span>
+    </div>
+</a>
+
+<a href="https://www.typingclub.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">TypingClub</h3>
+        <p class="mb-3">Learn touch typing through fun and effective lessons.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Practice Typing</span>
+    </div>
+</a>
+
+        </div>
+    </section>
+
+    <!-- Entertainment Section -->
+    <section id="entertainment">
+        <h2 class="text-3xl font-bold text-center mb-2" style="color: #8E44AD;">Entertainment</h2>
+        <p class="text-center mb-6">Explore a world of fun – from videos, games, anime to memes and more!</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <a href="https://www.youtube.com" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">YouTube</h3>
+                    <p class="mb-3">Watch trending videos, music, and vlogs from around the globe.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit YouTube</span>
+                </div>
+            </a>
+
+            <a href="https://www.netflix.com" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">Netflix</h3>
+                    <p class="mb-3">Stream movies, web series, anime, and documentaries.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Go to Netflix</span>
+                </div>
+            </a>
+
+            <a href="https://www.hotstar.com" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">Hotstar</h3>
+                    <p class="mb-3">Watch Indian shows, movies, and live sports online.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit Hotstar</span>
+                </div>
+            </a>
+
+            <a href="https://www.crunchyroll.com" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">Crunchyroll</h3>
+                    <p class="mb-3">Watch the latest anime episodes legally and in HD.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Watch Anime</span>
+                </div>
+            </a>
+
+            <a href="https://open.spotify.com" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">Spotify</h3>
+                    <p class="mb-3">Listen to music, podcasts, and curated playlists.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Open Spotify</span>
+                </div>
+            </a>
+
+            <a href="https://9gag.com" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">9GAG</h3>
+                    <p class="mb-3">Laugh out loud with the funniest memes and viral content.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit 9GAG</span>
+                </div>
+            </a>
+
+            <a href="https://www.twitch.tv" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">Twitch</h3>
+        <p class="mb-3">Watch live streams of games, music, and creators worldwide.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Browse Twitch</span>
+    </div>
+</a>
+
+<a href="https://www.reddit.com/r/funny/" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">Reddit r/funny</h3>
+        <p class="mb-3">One of the internet’s largest hubs for memes and humor.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Laugh on Reddit</span>
+    </div>
+</a>
+
+<a href="https://www.imdb.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">IMDb</h3>
+        <p class="mb-3">Find ratings, reviews, and trailers of movies and shows.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit IMDb</span>
+    </div>
+</a>
+
+<a href="https://store.steampowered.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">Steam</h3>
+        <p class="mb-3">Download and play thousands of PC games instantly.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Explore Steam</span>
+    </div>
+</a>
+
+<a href="https://www.webtoons.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">Webtoon</h3>
+        <p class="mb-3">Read original comics and manga from creators worldwide.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Read Webtoons</span>
+    </div>
+</a>
+
+        </div>
+    </section>
+
+    <!-- Development Section -->
+    <section id="development">
+        <h2 class="text-3xl font-bold text-center mb-2" style="color: #8E44AD;">Development</h2>
+        <p class="text-center mb-6">Tools and resources for coders, developers, and creators to build amazing projects.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <a href="https://github.com" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">GitHub</h3>
+                    <p class="mb-3">Host and review code, manage projects, and collaborate.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Go to GitHub</span>
+                </div>
+            </a>
+
+            <a href="https://codepen.io" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">CodePen</h3>
+                    <p class="mb-3">Create and share front-end code snippets and projects.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Try CodePen</span>
+                </div>
+            </a>
+
+            <a href="https://stackoverflow.com" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">Stack Overflow</h3>
+                    <p class="mb-3">Get answers to your programming questions.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit Stack Overflow</span>
+                </div>
+            </a>
+
+            <a href="https://code.visualstudio.com" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">Visual Studio Code</h3>
+                    <p class="mb-3">Powerful and free source code editor.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Download VS Code</span>
+                </div>
+            </a>
+
+            <a href="https://netlify.com" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">Netlify</h3>
+                    <p class="mb-3">Deploy and manage modern web projects with ease.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Deploy on Netlify</span>
+                </div>
+            </a>
+
+            <a href="https://replit.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">Replit</h3>
+        <p class="mb-3">Code, collaborate, and deploy directly from your browser.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Use Replit</span>
+    </div>
+</a>
+
+<a href="https://developer.mozilla.org" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">MDN Web Docs</h3>
+        <p class="mb-3">Comprehensive resources for HTML, CSS, JavaScript, and more.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit MDN</span>
+    </div>
+</a>
+
+<a href="https://figma.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">Figma</h3>
+        <p class="mb-3">Collaborative interface design and prototyping tool.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Design with Figma</span>
+    </div>
+</a>
+
+<a href="https://vercel.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">Vercel</h3>
+        <p class="mb-3">Fast, modern deployment for frontend frameworks.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit Vercel</span>
+    </div>
+</a>
+
+<a href="https://postman.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">Postman</h3>
+        <p class="mb-3">Design, test, and document APIs with ease.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Open Postman</span>
+    </div>
+</a>
+
+        </div>
+    </section>
+
+    <!-- Learning Section -->
+    <section id="learning">
+        <h2 class="text-3xl font-bold text-center mb-2" style="color: #8E44AD;">Learning</h2>
+        <p class="text-center mb-6">Expand your knowledge with courses, tutorials, and interactive content.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <a href="https://coursera.org" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">Coursera</h3>
+                    <p class="mb-3">Online courses from top universities and companies.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Browse Coursera</span>
+                </div>
+            </a>
+
+            <a href="https://edx.org" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">edX</h3>
+                    <p class="mb-3">High-quality courses from the world’s best institutions.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Explore edX</span>
+                </div>
+            </a>
+
+            <a href="https://udemy.com" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">Udemy</h3>
+                    <p class="mb-3">Wide variety of courses, often on sale.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Check Udemy</span>
+                </div>
+            </a>
+
+            <a href="https://www.kaggle.com/learn" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">Kaggle Learn</h3>
+                    <p class="mb-3">Hands-on tutorials in data science and machine learning.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Start Learning</span>
+                </div>
+            </a>
+
+            <a href="https://freecodecamp.org" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">freeCodeCamp</h3>
+                    <p class="mb-3">Free coding lessons and projects.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit freeCodeCamp</span>
+                </div>
+            </a>
+
+            <a href="https://brilliant.org" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">Brilliant</h3>
+        <p class="mb-3">Interactive problem solving for math, science, and computer science.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Explore Brilliant</span>
+    </div>
+</a>
+
+<a href="https://www.codecademy.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">Codecademy</h3>
+        <p class="mb-3">Learn to code interactively with hands-on exercises.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit Codecademy</span>
+    </div>
+</a>
+
+<a href="https://www.skillshare.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">Skillshare</h3>
+        <p class="mb-3">Creative and professional courses on design, business, and more.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Browse Skillshare</span>
+    </div>
+</a>
+
+<a href="https://www.w3schools.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">W3Schools</h3>
+        <p class="mb-3">Tutorials for web development and programming basics.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit W3Schools</span>
+    </div>
+</a>
+
+<a href="https://www.theodinproject.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">The Odin Project</h3>
+        <p class="mb-3">Full-stack web development curriculum—100% free.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Start Odin Project</span>
+    </div>
+</a>
+
+        </div>
+    </section>
+
+    <!-- Practice Section -->
+    <section id="practice">
+        <h2 class="text-3xl font-bold text-center mb-2" style="color: #8E44AD;">Practice</h2>
+        <p class="text-center mb-6">Sharpen your skills with challenges, quizzes, and coding platforms.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <a href="https://leetcode.com" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">LeetCode</h3>
+                    <p class="mb-3">Coding challenges for interview preparation.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Solve Problems</span>
+                </div>
+            </a>
+
+            <a href="https://hackerrank.com" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">HackerRank</h3>
+                    <p class="mb-3">Practice coding and algorithms.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Start Practicing</span>
+                </div>
+            </a>
+
+            <a href="https://www.codewars.com" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">Codewars</h3>
+                    <p class="mb-3">Improve your skills by training with code challenges.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Join Codewars</span>
+                </div>
+            </a>
+
+            <a href="https://projecteuler.net" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">Project Euler</h3>
+                    <p class="mb-3">Math and programming problems to boost logic and problem-solving.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Try Project Euler</span>
+                </div>
+            </a>
+
+            <a href="https://www.codechef.com" target="_blank" class="block">
+                <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+                    <h3 class="text-xl font-bold mb-2">CodeChef</h3>
+                    <p class="mb-3">Monthly contests and practice problems for programmers.</p>
+                    <span class="text-[#8E44AD] hover:text-[#00FFFF]">Compete on CodeChef</span>
+                </div>
+            </a>
+
+            <a href="https://www.codingame.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">CodinGame</h3>
+        <p class="mb-3">Play games while solving programming challenges.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Play & Code</span>
+    </div>
+</a>
+
+<a href="https://exercism.org" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">Exercism</h3>
+        <p class="mb-3">Practice coding in 60+ languages with mentoring.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Practice on Exercism</span>
+    </div>
+</a>
+
+<a href="https://www.spoj.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">SPOJ</h3>
+        <p class="mb-3">Solve classical and advanced programming problems.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Try SPOJ</span>
+    </div>
+</a>
+
+<a href="https://binarysearch.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">Binary Search</h3>
+        <p class="mb-3">Level-based coding challenges with discussion and collaboration.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Solve Binary Search</span>
+    </div>
+</a>
+
+<a href="https://www.algoexpert.io" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl transition-all duration-300 ease-in-out shadow-md cursor-pointer">
+        <h3 class="text-xl font-bold mb-2">AlgoExpert</h3>
+        <p class="mb-3">Premium platform for interview preparation.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit AlgoExpert</span>
+    </div>
+</a>
+
+            </div>
+    </section>
+
+    <!-- AI Section -->
+<section id="ai" class="mt-16">
+<h2 class="text-3xl font-bold mb-4 text-center" style="color: #8E44AD;">AI</h2>
+<p class="text-center text-[#AAAAAA] mb-8">
+    Explore the latest AI tools, research, and platforms to innovate and automate.
+</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <a href="https://openai.com" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">OpenAI</h3>
+            <p class="text-[#AAAAAA] mb-3">State-of-the-art AI research and tools.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Explore OpenAI</span>
+        </div>
+    </a>
+    <a href="https://huggingface.co" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">Hugging Face</h3>
+            <p class="text-[#AAAAAA] mb-3">Transformers, datasets, and AI models hub.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit Hugging Face</span>
+        </div>
+    </a>
+    <a href="https://ai.google" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">Google AI</h3>
+            <p class="text-[#AAAAAA] mb-3">Google’s AI research and products.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Explore Google AI</span>
+        </div>
+    </a>
+    <a href="https://aidungeon.io" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">AI Dungeon</h3>
+            <p class="text-[#AAAAAA] mb-3">AI-powered text adventure games.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Play AI Dungeon</span>
+        </div>
+    </a>
+    <a href="https://runwayml.com" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">Runway ML</h3>
+            <p class="text-[#AAAAAA] mb-3">Creative tools powered by machine learning.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Try Runway ML</span>
+        </div>
+    </a>
+    <a href="https://www.ibm.com/watson" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">IBM Watson</h3>
+            <p class="text-[#AAAAAA] mb-3">Enterprise AI and cognitive solutions.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Discover IBM Watson</span>
+        </div>
+    </a>
+
+    <a href="https://soundraw.io" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+        <h3 class="text-xl font-bold mb-2 text-white">Soundraw</h3>
+        <p class="text-[#AAAAAA] mb-3">Generate royalty-free AI music for content creation.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Create Music</span>
+    </div>
+</a>
+
+<a href="https://www.synthesia.io" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+        <h3 class="text-xl font-bold mb-2 text-white">Synthesia</h3>
+        <p class="text-[#AAAAAA] mb-3">Create AI videos with avatars just by typing text.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Make AI Videos</span>
+    </div>
+</a>
+
+<a href="https://chat.openai.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+        <h3 class="text-xl font-bold mb-2 text-white">ChatGPT</h3>
+        <p class="text-[#AAAAAA] mb-3">Write emails, stories, code, and more with GPT models.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Use ChatGPT</span>
+    </div>
+</a>
+
+<a href="https://www.tome.app" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+        <h3 class="text-xl font-bold mb-2 text-white">Tome</h3>
+        <p class="text-[#AAAAAA] mb-3">Create engaging AI-powered presentations and stories.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Generate Pitches</span>
+    </div>
+</a>
+
+<a href="https://www.canva.com/magic" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+        <h3 class="text-xl font-bold mb-2 text-white">Canva Magic Studio</h3>
+        <p class="text-[#AAAAAA] mb-3">AI tools for designing, writing, and generating content.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Try Canva Magic</span>
+    </div>
+</a>
+
+<a href="https://www.descript.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+        <h3 class="text-xl font-bold mb-2 text-white">Descript</h3>
+        <p class="text-[#AAAAAA] mb-3">Edit audio and video using text with AI tools.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Edit with Descript</span>
+    </div>
+</a>
+
+<a href="https://pika.art" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+        <h3 class="text-xl font-bold mb-2 text-white">Pika</h3>
+        <p class="text-[#AAAAAA] mb-3">Create stunning AI-generated videos from text or image input.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Explore Pika</span>
+    </div>
+</a>
+
+<a href="https://firefly.adobe.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+        <h3 class="text-xl font-bold mb-2 text-white">Adobe Firefly</h3>
+        <p class="text-[#AAAAAA] mb-3">Create images, text effects, and designs with Adobe's AI tools.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Use Firefly</span>
+    </div>
+</a>
+
+</div>
+</section>
+
+<!-- Artist Section -->
+<section id="artist" class="mt-16">
+<h2 class="text-3xl font-bold mb-4 text-center" style="color: #8E44AD;">Artist</h2>
+<p class="text-center text-[#AAAAAA] mb-8">
+    Resources and communities for digital artists, painters, and creatives.
+</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <a href="https://deviantart.com" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">DeviantArt</h3>
+            <p class="text-[#AAAAAA] mb-3">Showcase your artwork and connect with artists.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit DeviantArt</span>
+        </div>
+    </a>
+    <a href="https://artstation.com" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">ArtStation</h3>
+            <p class="text-[#AAAAAA] mb-3">Portfolio platform for professional artists.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Explore ArtStation</span>
+        </div>
+    </a>
+    <a href="https://behance.net" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">Behance</h3>
+            <p class="text-[#AAAAAA] mb-3">Creative portfolios and projects showcase.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Browse Behance</span>
+        </div>
+    </a>
+    <a href="https://pixiv.net" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">Pixiv</h3>
+            <p class="text-[#AAAAAA] mb-3">Japanese community for artists and illustrators.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit Pixiv</span>
+        </div>
+    </a>
+    <a href="https://dribbble.com" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">Dribbble</h3>
+            <p class="text-[#AAAAAA] mb-3">Show and discover creative design work.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Check Dribbble</span>
+        </div>
+    </a>
+    <a href="https://cgsociety.org" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">CGSociety</h3>
+            <p class="text-[#AAAAAA] mb-3">Digital art, 3D, and CG community.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Join CGSociety</span>
+        </div>
+    </a>
+</div>
+</section>
+
+<!-- Gaming Section -->
+<section id="gaming" class="mt-16">
+<h2 class="text-3xl font-bold mb-4 text-center" style="color: #8E44AD;">Gaming</h2>
+<p class="text-center text-[#AAAAAA] mb-8">
+    Discover game platforms, communities, and streaming sites.
+</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <a href="https://store.steampowered.com" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">Steam</h3>
+            <p class="text-[#AAAAAA] mb-3">Leading PC gaming platform with a vast game library.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit Steam</span>
+        </div>
+    </a>
+    <a href="https://twitch.tv" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">Twitch</h3>
+            <p class="text-[#AAAAAA] mb-3">Watch live streams and gaming content.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Watch Twitch</span>
+        </div>
+    </a>
+    <a href="https://epicgames.com/store" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">Epic Games Store</h3>
+            <p class="text-[#AAAAAA] mb-3">PC games with free weekly titles.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit Epic Games</span>
+        </div>
+    </a>
+    <a href="https://ign.com" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">IGN</h3>
+            <p class="text-[#AAAAAA] mb-3">Gaming news, reviews, and videos.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Read IGN</span>
+        </div>
+    </a>
+    <a href="https://gamespot.com" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">GameSpot</h3>
+            <p class="text-[#AAAAAA] mb-3">Latest game news, reviews, and walkthroughs.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit GameSpot</span>
+        </div>
+    </a>
+    <a href="https://metacritic.com/game" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">Metacritic Games</h3>
+            <p class="text-[#AAAAAA] mb-3">Game ratings and reviews aggregator.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Check Metacritic</span>
+        </div>
+    </a>
+    <a href="https://roblox.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+        <h3 class="text-xl font-bold mb-2 text-white">Roblox</h3>
+        <p class="text-[#AAAAAA] mb-3">Create, share, and play user-generated games and worlds.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Explore Roblox</span>
+    </div>
+</a>
+
+<a href="https://itch.io" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+        <h3 class="text-xl font-bold mb-2 text-white">itch.io</h3>
+        <p class="text-[#AAAAAA] mb-3">Indie game marketplace and game jam hub.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit itch.io</span>
+    </div>
+</a>
+
+<a href="https://store.rockstargames.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+        <h3 class="text-xl font-bold mb-2 text-white">Rockstar Games</h3>
+        <p class="text-[#AAAAAA] mb-3">Home of Grand Theft Auto, Red Dead Redemption, and more.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit Rockstar</span>
+    </div>
+</a>
+
+<a href="https://nexusmods.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+        <h3 class="text-xl font-bold mb-2 text-white">Nexus Mods</h3>
+        <p class="text-[#AAAAAA] mb-3">Huge library of game mods and community content.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Browse Mods</span>
+    </div>
+</a>
+
+<a href="https://battle.net" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+        <h3 class="text-xl font-bold mb-2 text-white">Battle.net</h3>
+        <p class="text-[#AAAAAA] mb-3">Blizzard’s platform for Overwatch, Diablo, and WoW.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Open Battle.net</span>
+    </div>
+</a>
+
+<a href="https://store.ubisoft.com" target="_blank" class="block">
+    <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+        <h3 class="text-xl font-bold mb-2 text-white">Ubisoft Store</h3>
+        <p class="text-[#AAAAAA] mb-3">Games from Assassin’s Creed, Far Cry, and more.</p>
+        <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit Ubisoft</span>
+    </div>
+</a>
+
+</div>
+</section>
+
+<!-- Music Section -->
+<section id="music" class="mt-16">
+<h2 class="text-3xl font-bold mb-4 text-center" style="color: #8E44AD;">Music</h2>
+<p class="text-center text-[#AAAAAA] mb-8">
+    Platforms for streaming, discovering, and creating music.
+</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <a href="https://spotify.com" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">Spotify</h3>
+            <p class="text-[#AAAAAA] mb-3">Stream millions of songs and podcasts.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Listen on Spotify</span>
+        </div>
+    </a>
+    <a href="https://soundcloud.com" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">SoundCloud</h3>
+            <p class="text-[#AAAAAA] mb-3">Upload and discover new music and artists.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Explore SoundCloud</span>
+        </div>
+    </a>
+    <a href="https://bandcamp.com" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">Bandcamp</h3>
+            <p class="text-[#AAAAAA] mb-3">Support independent artists directly.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit Bandcamp</span>
+        </div>
+    </a>
+    <a href="https://music.youtube.com" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">YouTube Music</h3>
+            <p class="text-[#AAAAAA] mb-3">Music streaming integrated with YouTube.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Listen on YouTube Music</span>
+        </div>
+    </a>
+    <a href="https://music.apple.com" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">Apple Music</h3>
+            <p class="text-[#AAAAAA] mb-3">Stream and download songs on Apple devices.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit Apple Music</span>
+        </div>
+    </a>
+    <a href="https://audiomack.com" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">Audiomack</h3>
+            <p class="text-[#AAAAAA] mb-3">Free music streaming and discovery.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Explore Audiomack</span>
+        </div>
+    </a>
+</div>
+</section>
+
+<!-- Writing Section -->
+<section id="writing" class="mt-16 mb-16">
+<h2 class="text-3xl font-bold mb-4 text-center" style="color: #8E44AD;">Writing</h2>
+<p class="text-center text-[#AAAAAA] mb-8">
+    Tools and communities for writers, bloggers, and authors.
+</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <a href="https://medium.com" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">Medium</h3>
+            <p class="text-[#AAAAAA] mb-3">Publish and read quality articles and stories.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Read on Medium</span>
+        </div>
+    </a>
+    <a href="https://wattpad.com" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">Wattpad</h3>
+            <p class="text-[#AAAAAA] mb-3">Community for reading and writing stories.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Discover Stories</span>
+        </div>
+    </a>
+    <a href="https://grammarly.com" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">Grammarly</h3>
+            <p class="text-[#AAAAAA] mb-3">Writing assistant and grammar checker.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Improve Writing</span>
+        </div>
+    </a>
+    <a href="https://prowritingaid.com" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">ProWritingAid</h3>
+            <p class="text-[#AAAAAA] mb-3">Style editor and writing coach.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Check ProWritingAid</span>
+        </div>
+    </a>
+    <a href="https://literatureandlatte.com/scrivener/overview" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">Scrivener</h3>
+            <p class="text-[#AAAAAA] mb-3">Powerful writing software for long projects.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Visit Scrivener</span>
+        </div>
+    </a>
+    <a href="https://nanowrimo.org" target="_blank" class="block">
+        <div class="card p-6 rounded-2xl shadow-md transition-all duration-300 ease-in-out cursor-pointer">
+            <h3 class="text-xl font-bold mb-2 text-white">NaNoWriMo</h3>
+            <p class="text-[#AAAAAA] mb-3">Write a novel in a month with community support.</p>
+            <span class="text-[#8E44AD] hover:text-[#00FFFF]">Join NaNoWriMo</span>
+        </div>
+    </a>
+</div>
+</section>
+
+</main>
+</body>
+</html>
