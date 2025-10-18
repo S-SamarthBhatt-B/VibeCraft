@@ -1,0 +1,457 @@
+/* VibeCraft Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('Img/bg.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+/* Navbar */
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background: rgba(46, 44, 74, 0.4); /* Slight transparency */
+  backdrop-filter: blur(12px); /* Glass effect */
+  -webkit-backdrop-filter: blur(12px); /* Safari support */
+  border-bottom: 2px solid rgba(0, 255, 255, 0.5); /* Soft aqua line */
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.15); /* Aqua glow */
+}
+
+/* Rest of your styles remain unchanged */
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.server-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #8E44AD;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #00FFFF;
+  text-decoration: none;
+  font-weight: 500;
+  transition: text-decoration 0.3s;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #00FFFF;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(46, 44, 74, 0.85);
+    backdrop-filter: blur(8px);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 255, 255, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.1);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 0.5rem 0;
+  }
+}
+
+/* Welcome Section */
+.welcome {
+  text-align: center;
+  padding: 10rem 1rem;
+  background-color: rgba(28, 27, 47, 0.8);
+}
+
+.welcome h1 {
+  font-size: 3rem;
+  color: #8E44AD;
+}
+
+.slogan {
+  font-size: 1.25rem;
+  color: #9B89B3;
+  margin: 1rem 0 2rem;
+}
+
+.join-button {
+  display: inline-block;
+  background-color: #26D7C4;
+  color: #000;
+  padding: 0.75rem 2rem;
+  border-radius: 999px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #00FFFF;
+}
+
+/* Shared Sections */
+.features,
+.teams {
+  padding: 9rem 2rem;
+  background-color: rgba(46, 44, 74, 0.9);
+  text-align: center;
+  overflow: hidden;
+}
+
+.features h2,
+.teams h2 {
+  font-size: 2rem;
+  color: #00FFFF;
+  margin-bottom: 2rem;
+}
+
+/* Grid Layout */
+.feature-grid,
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Cards */
+.feature-card,
+.team-card {
+  background-color: #1C1B2F;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(79, 208, 230, 0.2);
+  text-align: center;
+  word-wrap: break-word;
+  min-height: 150px;
+}
+
+.feature-card h3,
+.team-card h3 {
+  color: #8E44AD;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p,
+.team-card p {
+  color: #AAAAAA;
+}
+
+.team-card, .feature-card {
+  background-image: url('Img/card-bg.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff; /* Ensure text is readable */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+/* Contact Us*/
+#contact {
+  background-image: url(''); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+#contact::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional overlay for readability */
+  z-index: 0;
+}
+
+#contact * {
+  position: relative;
+  z-index: 1;
+}
+
+#contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#contact a {
+  color: #7aa5ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Learn More Button */
+.learn-more {
+  margin-top: 1rem;
+  display: inline-block;
+  background-color: #00FFFF;
+  color: #1C1B2F;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.learn-more:hover {
+  background-color: #26D7C4;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hide initially */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background-image: url('Img/bg.png'); /* Path to your image */
+  background-size: cover;                 /* Ensures image covers the box */
+  background-position: center;            /* Centers the image */
+  background-repeat: no-repeat;
+  
+   margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00f0ff;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+
+  /* Optional: add a semi-transparent overlay if text is hard to read */
+  backdrop-filter: blur(2px);
+}
+.modal-content h2 {
+  color: #8E44AD; /* Cyan title */
+  margin-bottom: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+/* Discord Embed */
+.discord-widget {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  .features,
+  .teams {
+    padding: 4rem 1rem;
+  }
+
+  .feature-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Member Section */
+
+.members {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 4rem 2rem;
+}
+.members h2 {
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  color: #00FFFF;
+  margin-bottom: 2rem;
+}
+
+.member-card {
+  position: relative;
+  border-radius: 22px;
+}
+
+.gradient-border {
+  padding: 2px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #00d4ff, #b400fb);
+}
+
+.card-content {
+  background-color: conic-gradient(from 0deg, #00d4ff, #b400fb, #00d4ff);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.banner {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.pfp-wrapper {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.pfp-border {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, #b400fb, #00d4ff, #b400fb);
+  padding: 0.1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.pfp {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-content {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.profile-content h2 {
+  margin: 10px 0 5px;
+  font-size: 22px;
+}
+
+.profile-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.badges {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.badge.owner {
+  background: linear-gradient(to right, #b400fb, #6f00ff);
+  color: white;
+}
+
+.badge.tester {
+  background: linear-gradient(to right, #343535, #9fa1a2);
+  color: white;
+}
+
+.badge.bug-finder {
+  background: linear-gradient(to right, #24532a, #88c57f);
+  color: white;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
