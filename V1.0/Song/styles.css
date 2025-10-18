@@ -1,0 +1,347 @@
+/* ============================================
+   🎨 Global Base Styles - VibeCraft Theme
+============================================ */
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: radial-gradient(circle at center, #1C1B2F 0%, #141322 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #00FFFF;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 0 0 12px #00FFFF, 0 0 30px #26D7C4;
+}
+
+
+/* ============================================
+   🧩 Player Layout Container
+============================================ */
+
+.player-wrapper.horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+
+/* ============================================
+   🎼 Instrumental & 🎤 Vocal Player Card
+============================================ */
+
+.player {
+  background: linear-gradient(145deg, #2E2C4A, #1C1B2F);
+  border-radius: 24px;
+  padding: 25px;
+  width: 340px;
+  text-align: center;
+  box-shadow: 0 0 25px #8E44AD55;
+  transition: all 0.3s ease;
+}
+
+.player:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px #00FFFF88;
+}
+
+
+/* 🖼 Cover Image Styling */
+.cover {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 15px 0;
+  box-shadow: 0 0 20px #00FFFF66;
+}
+
+
+/* 🎵 Song Titles */
+.player h2 {
+  color: #26D7C4;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #00FFFF99;
+}
+
+.player h3 {
+  color: #9B89B3;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+
+/* 🎛 Controls & Options */
+.controls,
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 12px;
+}
+
+
+/* 🔘 Button Styling */
+button {
+  background: none;
+  border: none;
+  color: #00FFFF;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.2s;
+  text-shadow: 0 0 6px #00FFFF88;
+}
+
+button:hover {
+  color: #8E44AD;
+  transform: scale(1.15);
+}
+
+/* ✨ Glowing Effect for Active Buttons (Loop / Shuffle) */
+button.glow {
+  color: #00FFFF;
+  text-shadow: 0 0 15px #00FFFF, 0 0 25px #26D7C4;
+  animation: glowPulse 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes glowPulse {
+  from {
+    text-shadow: 0 0 10px #00FFFF88;
+  }
+  to {
+    text-shadow: 0 0 20px #00FFFF, 0 0 30px #00FFFFBB;
+  }
+}
+
+
+/* 📊 Progress & Volume Section */
+.bottom-bar {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+
+.bottom-bar span {
+  font-size: 13px;
+  color: #AAAAAA;
+}
+
+
+/* 🎚 Slider Styling (Progress & Volume) */
+input[type="range"] {
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  background: #8E44AD;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: #00FFFF;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 0 5px #00FFFFAA;
+}
+
+
+/* ============================================
+   🎲 Mixed Shuffle Player - Spotify Style
+============================================ */
+
+.spotify-player {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000000;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 12px;
+  margin-top: 60px;
+  width: 95%;
+  max-width: 1000px;
+  box-shadow: 0 0 20px #000;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Left Section - Cover + Song Info */
+.spotify-player .left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.spotify-player .left img {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.song-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#mix-title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#mix-artist {
+  font-size: 12px;
+  color: #AAAAAA;
+}
+
+
+/* Center Section - Controls + Progress */
+.spotify-player .center {
+  flex: 2;
+  text-align: center;
+  min-width: 250px;
+}
+
+.spotify-player .controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 6px;
+}
+
+.spotify-player .controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.spotify-player .controls button:hover {
+  color: #1db954;
+  transform: scale(1.2);
+}
+
+#mix-shuffle.glow,
+#mix-loop.glow {
+  color: #1db954;
+  text-shadow: 0 0 8px #1db954;
+}
+
+
+/* Progress Bar with Time */
+.spotify-player .progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#mix-progress {
+  width: 60%;
+  accent-color: #1db954;
+  background-color: #444;
+}
+
+#mix-time-current,
+#mix-time-duration {
+  font-size: 11px;
+  color: #CCCCCC;
+}
+
+
+/* Right Section - Volume */
+.spotify-player .right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  justify-content: flex-end;
+  min-width: 150px;
+}
+
+#mix-volume {
+  width: 80px;
+  accent-color: #1db954;
+}
+
+
+/* ============================================
+   📱 Responsive Adjustments
+============================================ */
+
+@media (max-width: 768px) {
+  .player-wrapper.horizontal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .player,
+  .spotify-player {
+    width: 90%;
+  }
+
+  .controls,
+  .options {
+    gap: 15px;
+  }
+
+  .spotify-player {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .spotify-player .center,
+  .spotify-player .left,
+  .spotify-player .right {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #mix-progress {
+    width: 80%;
+  }
+}
+
+/* ============================================
+   🔊 Volume Icon Row for Instrumental & Vocal
+============================================ */
+
+.volume-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.volume-row span {
+  font-size: 16px;
+  color: #00FFFF;
+}

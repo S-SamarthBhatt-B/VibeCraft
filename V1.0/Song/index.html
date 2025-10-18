@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VibeCraft Music Trio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 class="title">🎵 VibeCraft Music Trio</h1>
+
+  <!-- 🎼 Instrumental + 🎤 Vocal Players -->
+  <div class="player-wrapper horizontal">
+
+    <!-- Instrumental Player -->
+    <div class="player" id="instrumentalPlayer">
+      <h2>🎼 Instrumental</h2>
+      <img src="songs/covers/default.jpg" class="cover" id="inst-cover" />
+      <h3 id="inst-title">Instrumental 1</h3>
+      <div class="controls">
+        <button id="inst-prev">⏮</button>
+        <button id="inst-play">▶️</button>
+        <button id="inst-next">⏭</button>
+      </div>
+      <div class="options">
+        <button id="inst-shuffle">🔀</button>
+        <button id="inst-loop">🔁</button>
+      </div>
+      <div class="bottom-bar">
+        <span id="inst-time">0:00 / 0:00</span>
+        <input type="range" id="inst-progress" value="0" />
+        <div class="volume-row">
+          <span>🔊</span>
+          <input type="range" id="inst-volume" min="0" max="1" step="0.01" value="1" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Vocal Player -->
+    <div class="player" id="vocalPlayer">
+      <h2>🎤 Vocal</h2>
+      <img src="songs/covers/default.jpg" class="cover" id="vocal-cover" />
+      <h3 id="vocal-title">Vocal 1</h3>
+      <div class="controls">
+        <button id="vocal-prev">⏮</button>
+        <button id="vocal-play">▶️</button>
+        <button id="vocal-next">⏭</button>
+      </div>
+      <div class="options">
+        <button id="vocal-shuffle">🔀</button>
+        <button id="vocal-loop">🔁</button>
+      </div>
+      <div class="bottom-bar">
+        <span id="vocal-time">0:00 / 0:00</span>
+        <input type="range" id="vocal-progress" value="0" />
+        <div class="volume-row">
+          <span>🔊</span>
+          <input type="range" id="vocal-volume" min="0" max="1" step="0.01" value="1" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 🎲 Mixed Shuffle Player (Spotify Style) -->
+  <div class="spotify-player">
+    <div class="left">
+      <img src="songs/covers/default.jpg" id="mix-cover" />
+      <div class="song-info">
+        <div id="mix-title">Random Mix</div>
+        <div id="mix-artist">VibeCraft Player</div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="controls">
+        <button id="mix-shuffle">🔀</button>
+        <button id="mix-prev">⏮</button>
+        <button id="mix-play">▶️</button>
+        <button id="mix-next">⏭</button>
+        <button id="mix-loop">🔁</button>
+      </div>
+      <div class="progress">
+        <span id="mix-time-current">0:00</span>
+        <input type="range" id="mix-progress" value="0" />
+        <span id="mix-time-duration">0:00</span>
+      </div>
+    </div>
+
+    <div class="right">
+      <span>🔊</span>
+      <input type="range" id="mix-volume" min="0" max="1" step="0.01" value="1" />
+    </div>
+  </div>
+
+  <!-- Audio Elements -->
+  <audio id="inst-audio"></audio>
+  <audio id="vocal-audio"></audio>
+  <audio id="mix-audio"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
