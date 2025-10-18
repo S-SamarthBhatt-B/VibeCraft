@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VibeCraft</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../Img/logo.png" />
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+  <!-- Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="../Img/logo.png" alt="Logo" class="logo" />
+      <a href="home.html" class="server-name">VibeCraft</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sections -->
+  <section class="welcome" id="Home">
+    <h1>Welcome to VibeCraft</h1>
+    <p class="slogan"></p>
+    <a href="https://discord.com/invite/fc3acxRs89" target="_blank" class="join-button">Join Now</a>
+  </section>
+
+  <section class="about reveal" id="about">
+    <h2>About VibeCraft</h2>
+    <p>VibeCraft is your space to explore creations in music, games, tools, and more. Celebrate and showcase your journey.</p>
+  </section>
+
+  <section class="works reveal" id="works">
+    <h2>Explore Our Works</h2>
+    <p>Projects that define our vibe.</p>
+    <div class="card-container">
+      <div class="card">
+        <h2>VibeCraft Discord Server</h2>
+        <p>Join the VibeCraft community — a creative space for gaming, music, writing, and more.</p>
+        <a href="https://dc.vibecraft.sbs/" target="_blank">Learn More</a>
+      </div>
+      <div class="card">
+        <h2>🪐 Solar System Project</h2>
+        <p>Explore a cosmic experience paired with sound and visual joy.</p>
+        <a href="https://ss.vibecraft.sbs/" target="_blank">Explore Now</a>
+      </div>
+      <div class="card">
+        <h2>🎵 Music Vibes</h2>
+        <p>Listen to hand-crafted tracks straight from the studio.</p>
+        <a href="https://songs.vibecraft.sbs/" target="_blank">Listen Now</a>
+      </div>
+      <div class="card">
+        <h2>🔗 VibeCraft LinkNest</h2>
+        <p>Find resources across development, study, and entertainment.</p>
+        <a href="https://linknest.vibecraft.sbs/" target="_blank">Explore Now</a>
+      </div>
+      <div class="card">
+        <h2>🎮 VibeCraft Fun Zone</h2>
+        <p>Play cool, creative, and challenging games made for everyone.</p>
+        <a href="https://fun.vibecraft.sbs/" target="_blank">Explore Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Connect with VibeCraft</h2>
+    <p>Have questions, ideas, or just want to vibe with us? Reach out!</p>
+    <div class="contact-icons">
+      <a href="mailto:support@vibecraft.sbs" target="_blank" class="contact-icon" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://discord.com/invite/fc3acxRs89" target="_blank" class="contact-icon" title="Discord">
+        <i class="fab fa-discord"></i>
+      </a>
+      <a href="https://github.com/S-SamarthBhatt-B" target="_blank" class="contact-icon" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.youtube.com/@SoulBurner-290" target="_blank" class="contact-icon" title="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Cursor V and Trail -->
+  <div class="custom-v-cursor" id="customV">V</div>
+  <div id="trail-container"></div>
+
+  <!-- Scripts -->
+  <script src="home.js"></script>
+  <script src="particle-home.js"></script>
+  <script src="../cursor/cursor.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+/* Reset & Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  cursor: none !important;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background: black;
+  color: white;
+  cursor: none !important;
+}
+
+/* Container */
+.main-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Background */
+.background-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(10px);
+  opacity: 0.5;
+  z-index: 0;
+}
+
+/* Particle Canvas */
+#bg-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Foreground Content */
+.content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Title */
+.title {
+  font-size: 4rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #ffffff, #00ffff, #ff00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  animation: pulse 3s infinite ease-in-out;
+  margin-bottom: 1rem;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 16px rgba(255, 255, 255, 0.35);
+  }
+}
+
+/* Slogan */
+.slogan {
+  font-size: 1.4rem;
+  font-family: monospace;
+  color: #e0e0e0;
+  min-height: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #00ffff;
+  width: fit-content;
+  margin: 0 auto 2rem;
+}
+
+/* Explore Button */
+.explore-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: black;
+  border-radius: 50px;
+  background: linear-gradient(270deg, #00ffff, #ff00ff, #00ff88, #ffd700);
+  background-size: 800% 800%;
+  box-shadow: 0 4px 20px rgba(255, 0, 255, 0.2);
+  transition: all 0.3s ease;
+  animation: gradientFlow 12s ease infinite;
+  text-decoration: none;
+  cursor: none;
+}
+
+.explore-btn:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.4), 0 0 40px rgba(0, 255, 255, 0.3);
+  animation: gradientFlow 3s ease infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ===== Responsive Typography ===== */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .slogan {
+    font-size: 1.1rem;
+    border-right: 1px solid #00ffff;
+  }
+
+  .explore-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .slogan {
+    font-size: 1rem;
+  }
+
+  .explore-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.25rem;
+  }
+}
+
+/* === Custom Cursor === */
+.custom-v-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: monospace;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff;
+  animation: vPulse 2s ease-in-out infinite;
+}
+
+@keyframes vPulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50%      { transform: translate(-50%, -50%) scale(1.15); }
+}
+
+.trail-dot {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.6;
+  z-index: 9998;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: trailFade 0.4s ease-out forwards;
+}
+
+@keyframes trailFade {
+  0% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.2);
+  }
+}
+
+.click-ripple {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #00ffff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  animation: rippleWave 0.6s ease-out forwards;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+@keyframes rippleWave {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(5);
+  }
+}

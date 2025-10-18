@@ -1,0 +1,404 @@
+/* === VibeCraft Home Page Theme (Updated and Cleaned with Cursor Fixes, Responsive) === */
+html, body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('../Img/bg.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  scroll-behavior: smooth;
+  position: relative;
+  min-height: 100vh;
+  cursor: none !important;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+canvas#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* === Navbar === */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 255, 255, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 255, 255, 0.15);
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: 0.75rem;
+}
+
+.server-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #00ffff, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  cursor: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-links a {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: none;
+}
+
+.nav-links a:hover {
+  color: #00ffff;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    z-index: 999;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 1rem 0;
+  }
+}
+
+section {
+  min-height: 100vh;
+  padding: 6rem 2rem;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #00ffff, #ff00ff, #00ff88);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: pulseGlow 3s infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    text-shadow: 0 0 8px rgba(255,255,255,0.2);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255,255,255,0.4);
+  }
+}
+
+.slogan {
+  font-size: 1.3rem;
+  font-family: monospace;
+  color: #e0e0e0;
+  min-height: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #00ffff;
+  animation: blinkCursor 0.8s infinite step-end;
+}
+
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.join-button {
+  background: linear-gradient(135deg, #00ffff, #ff00ff);
+  color: black;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: none !important;
+}
+
+.join-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ffff;
+}
+
+.about h2, .works h2, #contact h2 {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #00ffff, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about p, .works p, #contact p {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 800px;
+  margin-top: 1rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 18px rgba(0, 255, 255, 0.4);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #00ffff, #ff00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card a {
+  display: inline-block;
+  background: #00ffff;
+  color: black;
+  padding: 0.5rem 1.25rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+  cursor: none !important;
+}
+
+.card a:hover {
+  background: #00d9ff;
+}
+
+.contact {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  padding: 6rem 2rem;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: none !important;
+}
+
+.contact-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+  color: #00ffff;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.custom-v-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: monospace;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: vColorCycle 4s linear infinite, vPulse 2s ease-in-out infinite;
+  text-shadow: 0 0 6px #00ffff, 0 0 12px #00ffff;
+}
+
+@keyframes vColorCycle {
+  0%   { color: #00ffff; text-shadow: 0 0 5px #00ffff; }
+  25%  { color: #ff00ff; text-shadow: 0 0 5px #ff00ff; }
+  50%  { color: #00ff88; text-shadow: 0 0 5px #00ff88; }
+  75%  { color: #ff6600; text-shadow: 0 0 5px #ff6600; }
+  100% { color: #00ffff; text-shadow: 0 0 5px #00ffff; }
+}
+
+@keyframes vPulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50%      { transform: translate(-50%, -50%) scale(1.15); }
+}
+
+.trail-dot {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.6;
+  z-index: 9998;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: trailFade 0.4s ease-out forwards;
+}
+
+@keyframes trailFade {
+  0% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.2);
+  }
+}
+
+.click-ripple {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #00ffff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  animation: rippleWave 0.6s ease-out forwards;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+@keyframes rippleWave {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(5);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .welcome h1 {
+    font-size: 2.2rem;
+  }
+  .slogan {
+    font-size: 1rem;
+  }
+  .join-button {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+  }
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  .nav-links {
+    gap: 1rem;
+    flex-direction: column;
+  }
+  section {
+    padding: 5rem 1rem;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
